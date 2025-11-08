@@ -352,7 +352,7 @@ As it has now become very low cost to generate code using LLMs, it lowers the ba
 
 
 This has advantages and disadvantages.
-For instance, from a security perspective (on my mind given recent NPM package incidents), a widely-used library may be more likely to consider glaring security issues.
+For instance, from a security perspective (on my mind given recent NPM package incidents), a widely-used and well-established library may be more likely to have already resolved glaring security issues.
 But at the same time, if every app has its own, slightly different implementation of some function(ality), say `foo`, then a malicious actor cannot target everyone's app via the strategy of targeting some widely-used utility library that has a near-monopoly on `foo`. 
 
 
