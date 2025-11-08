@@ -3,10 +3,13 @@
 🚧 work in progress; some sections more complete than others
 
 _I like to think about this blog post as externalizing my thoughts on AI to free up space in my brain to think about other topics._
-_Caveat: I have a CS background, but do not claim to be an AI expert._
 
 
 _I am sure these thoughts will evolve over time (and I may update this post over time)._
+
+
+_Caveat: I have a CS background, but do not claim to be an AI expert._
+
 
 
 
