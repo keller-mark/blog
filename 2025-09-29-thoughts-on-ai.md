@@ -93,7 +93,7 @@ Some researchers have (controversially) referred to LLMs as ["Stochastic Parrots
 Is your task language-based? Do previous tokens predict future tokens?
 
 
-Before asking an LLM, I ask myself: Does this make sense as a language prediction or translation problem? Is it plausible that the information I need was in the training dataset (assuming the training data consists of all text on the internet approximately one year ago)? Am I alright with the randomness inherent to LLM responses?
+Before asking an LLM, I ask myself: **Does this make sense as a language prediction or translation problem?** Is it plausible that the information I need was in the training dataset (assuming the training data consists of all text on the internet approximately one year ago)? Am I alright with the randomness inherent to LLM responses?
 
 - English -> Code, yes it makes sense.
 - Prediction of the weather? No, it does not make sense as a language prediction problem. The weather forecast today does not depend on the words in my prompt.
