@@ -102,7 +102,7 @@ Before asking an LLM, I ask myself: **Does this make sense as a language predict
 
 ### AI in education and the LLM-as-a-tool analogy: Would you allow a child to use a calculator to learn their times tables?
 
-We have all read about how we should think of LLMs as "just another tool".
+Many argue that we should think of LLMs as "just another tool".
 I think it can be useful to consider the calculator-for-math analogy when we think about using AI in education.
 
 
