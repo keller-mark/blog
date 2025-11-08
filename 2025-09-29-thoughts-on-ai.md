@@ -143,7 +143,7 @@ _Note: this may be beyond the scope of AI fluency, especially for those without 
 While randomness is inherent to LLMs, the solution to this problem is to use an LLM to translate from human language (e.g., English) to an intermediate deterministic (e.g., code) representation.
 Rather than asking an LLM to solve the problem end-to-end, stopping at producing code ensures that (1) the logic can be verified by a human, and (2) avoids the randomness problem (since re-running deterministic code ensures that, given the input, the same output will be produced).
 
-Once in code form, not only are things deterministic, but all existing software development tools such as testing, version control can be used.
+Once in code form, not only are things deterministic, but all existing software development tools such as testing and version control can be used.
 
 This point is tightly coupled to the fact that AI-for-coding/developers (e.g., GitHub Copilot, Cursor) is a major use case for LLMs, and one of the only ones that makes sense.
 It is also closely related to how English-to-Code translation "makes sense" as a language problem (see above).
