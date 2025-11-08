@@ -2,6 +2,8 @@
 
 🚧 work in progress; some sections more complete than others
 
+_I like to think about this blog post as externalizing my thoughts on AI to free up space in my brain to think about other topics_
+
 ## What does it mean to be "fluent in AI"?
 
 I recently attended a career fair panel in which four high-up executives in big pharma companies discussed hiring for R&D positions.
