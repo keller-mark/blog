@@ -248,7 +248,7 @@ See https://simonwillison.net/2025/Sep/18/agents/
 
 It is in the best interest of LLM providers that their products appeal to human users.
 In doing so, [sycophancy](https://www.nature.com/articles/d41586-025-03390-0) has become a problem.
-(This is related to the contents of system prompts.)
+(This is related to the contents of system prompts as well as how the model is rewarded during training.)
 
 
 ### PDFs are hard for machines to read
