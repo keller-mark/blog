@@ -180,7 +180,7 @@ Researchers have shown that the compressed nature of LLMs means that there are s
 However, as models become more advanced, these subtle patterns will become increasingly difficult to detect.
 In these cases, techniques such as [watermarking](https://proceedings.mlr.press/v202/kirchenbauer23a/kirchenbauer23a.pdf) can be used to explicitly modify any LLM output in order to make its machine-generated nature detectable.
 To learn more, see this [recent study](https://doi.org/10.48550/arXiv.2510.18774) that uses AI detection to reveal widespread undisclosed usage in journalism.
-When sharing LLM-generated text without disclosing LLM usage, it is important to keep in mind that both detectors and watermarking techniques exist (and any closed-source LLM may be applying a watermark).
+When sharing LLM-generated text without disclosing LLM usage, it is important to keep in mind that both detectors and watermarking techniques exist (and any closed-source LLM may be applying a watermark without your knowledge).
 
 
 ### Training data is old
