@@ -386,7 +386,7 @@ I was recently asked, "How do you think your job will be changed by AI?" and sub
 
 These were my responses to the latter question:
 
-- I am worried about the societal implications of AI, such as deepfake images/videos/calls, cybersecurity, job losses, and education impacts.
+- I am worried about the societal implications of AI, such as deepfake images/videos/calls, cybersecurity, job losses, and education impacts. https://bsky.app/profile/masonfromtwitter.bsky.social/post/3lu3m36wlak2u
   - Two things can be true: AI can simultaneously be useful for certain tasks (e.g., language translation, writing code) while at the same time being harmful to society. The main questions are: do the benefits outweigh the risks? and what will it take for goverments to implement sufficient guardrails (if they ever get past the AGI-race mentality)?
 - I don't like that dedication of so much interest/human-energy to LLMs/chatbots comes at the cost of not pursuing other interesting projects (e.g., non-LLM-based CS/machine learning/bioinformatics).
   - It is unnerving that in academia, funding agencies (and their study sections which are supposed to be panels of experts on specific topics that guide grant funding and decide how tax dollars are spent) seem to have bought into hype around AI just as much as everyone else. (There are of course exceptions, and there are plenty of people doing great research on AI. For instance, I particularly like the [Ai2 Paper Finder](https://allenai.org/blog/paper-finder) tool).
@@ -415,7 +415,6 @@ If so, take it with a grain of salt.
 - https://www.normaltech.ai/p/could-ai-slow-science
 - https://www.foundationwebdev.com/2025/07/opinion-is-the-use-of-ai-worth-it/
 - https://apnews.com/article/electricity-prices-data-centers-artificial-intelligence-fbf213a915fb574a4f3e5baaa7041c3a
-- https://bsky.app/profile/masonfromtwitter.bsky.social/post/3lu3m36wlak2u
 - https://openai.com/index/why-language-models-hallucinate/
 - https://www.shloked.com/writing/claude-memory
 - https://www.youtube.com/watch?v=Vz0oQ0v0W10
