@@ -387,8 +387,9 @@ I was recently asked, "How do you think your job will be changed by AI?" and sub
 These were my responses to the latter question:
 
 - I am worried about the societal implications of AI, such as deepfake images/videos/calls, cybersecurity, job losses, and education impacts.
-  - Two things can be true: AI can simultaneously be useful for certain tasks (e.g., language translation, writing code) while at the same time being harmful to society. The main questions are: do the benefits outweigh the risks? and what will it take for goverments implement sufficient guardrails (if they ever get past the AGI-race mentality)?
+  - Two things can be true: AI can simultaneously be useful for certain tasks (e.g., language translation, writing code) while at the same time being harmful to society. The main questions are: do the benefits outweigh the risks? and what will it take for goverments to implement sufficient guardrails (if they ever get past the AGI-race mentality)?
 - I don't like that dedication of so much interest/human-energy to LLMs/chatbots comes at the cost of not pursuing other interesting projects (e.g., non-LLM-based CS/machine learning/bioinformatics).
+  - It is unnerving that in academia, funding agencies (and their study sections which are supposed to be panels of experts on specific topics that guide grant funding and decide how tax dollars are spent) seem to have bought into hype around AI just as much as everyone else.
 - I am worried about the loss of critical thinking skills, on both collective and individual levels. 
 - I don't like the environmental costs (energy and water).
   - May be miniscule per-prompt, but as a whole it is having a major impact, especially with companies racing to integrate AI into everything without first considering whether it is useful.
