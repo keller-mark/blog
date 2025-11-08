@@ -6,7 +6,7 @@ _I like to think about this blog post as externalizing my thoughts on AI to free
 _Caveat: I have a CS background, but do not claim to be an AI expert._
 
 
-_I am sure the answer(s) will evolve over time (and I may update this post over time)._
+_I am sure these thoughts will evolve over time (and I may update this post over time)._
 
 
 
