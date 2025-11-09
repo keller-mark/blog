@@ -90,10 +90,10 @@ Some researchers have (controversially) referred to LLMs as ["Stochastic Parrots
 
 ### Before asking an LLM, ask yourself: Does this question makes sense as a "language problem"?
 
-Is your task language-based? Do previous tokens predict future tokens?
+<!-- Is your task language-based? Do previous tokens predict future tokens? -->
 
 
-Before asking an LLM, I ask myself: **Does this make sense as a language prediction or translation problem?** Is it plausible that the information I need was in the training dataset (assuming the training data consists of all text on the internet approximately one year ago)? Am I alright with the randomness inherent to LLM responses?
+Before asking an LLM, I ask myself: **Does this task make sense as a language prediction or translation problem?** Is it plausible that the information I need was in the training dataset (assuming the training data consists of all text on the internet approximately one year ago)? Am I alright with the randomness inherent to LLM responses?
 
 - English -> Code, yes it makes sense.
 - Prediction of the weather? No, it does not make sense as a language prediction problem. The weather forecast today does not depend on the words in my prompt.
@@ -145,8 +145,7 @@ Rather than asking an LLM to solve the problem end-to-end, stopping at producing
 
 Once in code form, not only are things deterministic, but all existing software development tools such as testing and version control can be used.
 
-This point is tightly coupled to the fact that AI-for-coding/developers (e.g., GitHub Copilot, Cursor) is a major use case for LLMs, and one of the only ones that makes sense.
-It is also closely related to how English-to-Code translation "makes sense" as a language problem (see above).
+This point is tightly coupled to the fact that AI-for-coding (e.g., GitHub Copilot, Cursor) is has been of the most useful applications for LLMs: because English-to-Code translation "makes sense" as a language problem.
 
 ### LLMs use multiple levels of "context"
 
