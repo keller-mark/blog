@@ -234,6 +234,8 @@ See Google's [environmental impact analysis](https://arxiv.org/abs/2508.15734).
 
 <!-- Could also mention local vs. hosted. --> 
 
+See https://opensource.org/ai/open-weights
+
 ### Model weights can be manipulated
 
 While to some extent LLM models are black boxes, there are ever-increasing efforts to probe models and develop methods for [interpretability](https://transformer-circuits.pub/2024/scaling-monosemanticity/).
