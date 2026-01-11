@@ -371,10 +371,26 @@ In the open-source realm specifically it could have implications for collaborati
 
 However it is interesting to consider that LLMs are (at least currently) bad at creating abstractions that reflect the bigger picture.
 
-- It is still on the developer to recognize the value of an abstraction, such as when to go to the extra effort to create a reusable package for some code, and how to structure the end-user APIs.
-In a way, this makes sense though, as the LLM is only doing what we ask, and we are generally asking for features that solve a specific problem in a specific codebase (we are not asking to solve a problem in-general, across many code-bases).
+I have experienced this myself and, anecdotally, I have seen several recent (as of January 2026) bluesky posts noting the sentiment that coding agents like Claude Code are generally bad at reusing code, or averse to adding dependencies (even for major features / low-level things for which there are existing libraries), with speculation that this behavior is intentionally baked into the model during post-training to avoid it trying to use outdated APIs.
 
-Anecdotally, I have seen several recent (as of January 2026) bluesky posts noting the sentiment that coding agents like Claude Code are generally bad at reusing code, or averse to adding dependencies (even for major features / low-level things for which there are existing libraries), with speculation that this behavior is intentionally baked into the model during post-training to avoid it trying to use outdated APIs.
+
+In a way, it makes sense that LLMs would be bad at abstraction though, as the LLM is only doing what we ask, and we are generally asking for features that solve a specific problem in a specific codebase (we are not asking to solve a problem in-general, across many code-bases).
+Therefore, it is still on human developers to recognize the value of an abstraction, such as when to go to the extra effort to create a reusable package for some code, and how to structure the end-user APIs.
+
+
+The following quotes from a recent [JOSS blog post](https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future) agree with and nicely summarize some of the above points:
+
+> ...With AI agents increasingly capable of producing entire codebases from natural language prompts, the marginal cost of code generation is rapidly approaching zero...
+>
+> ...As AI becomes capable of handling increasing fractions of the actual implementation work, the irreplaceable human contributions to software become clearer: understanding context, collaboration with others, making design tradeoffs, creating abstractions that capture domain expertise, and building conceptual foundations and following sustainable software practices that enable future discovery...
+>
+> ...Regardless of whether you leveraged AI assistance, show the human work: the problem framing, key design decisions and abstractions, and the practices that make the software usable and sustainable for others (tests, documentation, licensing, versioned releases, and a transparent issue and review process)...
+>
+> ...Show us the trade-offs you weighed, the architecture you settled on, and why it matters. The most valuable contributions often lie not in the code itself but in the conceptual framework it embodies. We particularly value work that thoughtfully builds upon or extends existing software ecosystems rather than reinventing solutions where quality alternatives already exist. We recommend this information live in your user-facing documentation to help would-be users understand what your software does, and how it does it...
+>
+> ...In an era of rapid code generation, the work of creating maintainable, well-documented, test-driven systems becomes even more valuable. We’ll look for evidence of good practices: comprehensive testing, clear documentation, statements describing support and governance, and clear pathways for community contribution...
+
+
 
 #### LLMs are bad at performance optimization
 
