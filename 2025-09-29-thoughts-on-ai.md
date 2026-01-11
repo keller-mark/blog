@@ -367,6 +367,11 @@ This feels similar to other intellectual property concerns that have been raised
 In the open-source realm specifically it could have implications for collaboration and sustainability of open-source projects which were [already facing a crisis](https://openpath.quest/2024/the-open-source-sustainability-crisis/).
 
 
+These effects are likely to also occur unknowingly as developers use LLM code completion tools and coding agents.
+As AI companies have been caught using copyrighted materials like books as training data (which researchers have shown can be [extracted verbatim](https://doi.org/10.48550/arXiv.2601.02671)), it does not seem realistic to assume that AI companies are respecting open-source licenses when using code as training data; they are simply gobbling up all of the code they can get their hands on.
+Thus, what once may have been possible to guard against via alternative licensing (e.g., [FSL](https://fsl.software/) or [Polyform](https://polyformproject.org/licenses/)), no longer seems realistic.
+
+
 #### LLMs are bad at abstraction
 
 However it is interesting to consider that LLMs are (at least currently) bad at creating abstractions that reflect the bigger picture.
