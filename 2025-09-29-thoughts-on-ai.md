@@ -396,6 +396,17 @@ The following quotes from a recent [JOSS blog post](https://blog.joss.theoj.org/
 >
 > ...In an era of rapid code generation, the work of creating maintainable, well-documented, test-driven systems becomes even more valuable. We’ll look for evidence of good practices: comprehensive testing, clear documentation, statements describing support and governance, and clear pathways for community contribution...
 
+#### How does this all affect the open-source ecosystem?
+
+Understandably, there is currently a movement against reviewing pull requests that consist of AI-generated slop ([example](https://tylur.blog/harmful-prs/), [another example](https://graphite.art/volunteer/guide/starting-a-task/ai-contribution-policy/)).
+It may then be useful to consider how AI will impact the open-source ecosystem long-term, in light of the increasingly cheap cost to generate code that fulfills a particular feature request.
+From the perspective of a typical user of some library `lib`, if `lib` helps the user achieve 90% of their goals but is missing some feature `f1` that they need, they now have two main (constructive) options: build the feature and contribute back upstream OR build the feature and maintain a fork.
+If using LLMs now lowers the barrier to building the feature, then what is the incentive to contribute back upstream if there is a high chance this will involve friction (even just the normal friction of a pre-AI PR interaction may now be seen as too much effort)?
+The typical AI-using user may now seek to use AI to reduce this friction.
+The naive approach would be to delegate the interactions with the upstream project to their AI agent, but this will hit roadblocks if the upstream maintainers have a policy against AI-generated contributions.
+The next-best approach then would be for the user to delegate __maintenance of their fork__ to their AI agent.
+Should we therefore predict that we will see a lot more forking in the future, and AI tools will step in to this space of keeping forks in sync with upstream projects?
+What impacts will this have on the open-source ecosystem?
 
 
 #### LLMs are bad at performance optimization
