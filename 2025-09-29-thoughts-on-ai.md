@@ -374,6 +374,7 @@ However it is interesting to consider that LLMs are (at least currently) bad at 
 - It is still on the developer to recognize the value of an abstraction, such as when to go to the extra effort to create a reusable package for some code, and how to structure the end-user APIs.
 In a way, this makes sense though, as the LLM is only doing what we ask, and we are generally asking for features that solve a specific problem in a specific codebase (we are not asking to solve a problem in-general, across many code-bases).
 
+Anecdotally, I have seen several recent (as of January 2026) bluesky posts noting the sentiment that coding agents like Claude Code are generally bad at reusing code, or averse to adding dependencies (even for major features / low-level things for which there are existing libraries), with speculation that this behavior is intentionally baked into the model during post-training to avoid it trying to use outdated APIs.
 
 #### LLMs are bad at performance optimization
 
@@ -431,5 +432,6 @@ On AI in education:
 On AI in software development:
 - https://www.phillipcarter.dev/posts/coding-with-llms
 - https://blog.genesmindsmachines.com/p/llms-excel-at-programminghow-can
+- https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future
 
 
