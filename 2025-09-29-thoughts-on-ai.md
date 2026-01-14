@@ -405,7 +405,7 @@ If using LLMs now lowers the barrier to building the feature, then what is the i
 The typical AI-using user may now seek to use AI to reduce this friction.
 The naive approach would be to delegate the interactions with the upstream project to their AI agent, but this will hit roadblocks if the upstream maintainers have a policy against AI-generated contributions.
 The next-best approach then would be for the user to delegate __maintenance of their fork__ to their AI agent.
-Should we therefore predict that we will see a lot more forking in the future, and AI tools will step in to this space of keeping forks in sync with upstream projects?
+Should we therefore predict that we will see a lot more forking/vendoring in the future, and AI tools will step in to this space of keeping forks in sync with upstream projects?
 What impacts will this have on the open-source ecosystem?
 
 
@@ -454,6 +454,8 @@ If so, take it with a grain of salt.
 - https://www.shloked.com/writing/claude-memory
 - https://www.youtube.com/watch?v=Vz0oQ0v0W10
 - https://www.technologyreview.com/2025/10/30/1127057/agi-conspiracy-theory-artifcial-general-intelligence/
+- https://substack.com/inbox/post/183687217
+- https://www.science.org/content/article/ai-has-supercharged-scientists-may-have-shrunk-science
 <!-- - https://arxiv.org/abs/2508.15734 -->
 <!-- - https://doi.org/10.1145/3442188.3445922 -->
 
@@ -466,5 +468,6 @@ On AI in software development:
 - https://www.phillipcarter.dev/posts/coding-with-llms
 - https://blog.genesmindsmachines.com/p/llms-excel-at-programminghow-can
 - https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future
+
 
 
