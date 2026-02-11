@@ -476,6 +476,7 @@ If so, take it with a grain of salt.
 - https://substack.com/inbox/post/183687217
 - https://www.science.org/content/article/ai-has-supercharged-scientists-may-have-shrunk-science
 - https://www.youtube.com/watch?v=SmHgtyym6OA&t=1521s (from 25:21 to around 30:48)
+- https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it
 <!-- - https://arxiv.org/abs/2508.15734 -->
 <!-- - https://doi.org/10.1145/3442188.3445922 -->
 
