@@ -402,7 +402,12 @@ While I would not rule out improvement over time, I would reiterate the point ma
 
 #### Second-order effects
 
-- Reduced demand for closed-source software and SaaS products?: As AI reduces the cost and expertise required to create software, a second-order effect will be the reduced demand for commercial software (e.g., software-as-a-service) products, with some [notable exceptions](https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/) for certain categories such as payment processing or other things requiring high uptime or regulatory compliance.
+- Reduced demand for closed-source software and SaaS products?: As AI reduces the cost and expertise required to create software, a second-order effect will be the reduced demand for commercial software (e.g., software-as-a-service) products, with some [notable exceptions](https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/) for certain categories:
+  - core infrastructure like payment processing; industries involving lots of regulation / compliance
+  - very high-volume systems and data lakes
+  - software with significant network effects, especially where you collaborate with people outside your organization (e.g., Slack)
+  - products with rich integration ecosystems/plugin marketplaces
+  - companies with proprietary datasets
 - Security effects?: From a security perspective, a widely-used and well-established library may be more likely to have already resolved glaring security issues.
 But at the same time, if every app has its own, slightly different implementation of some function(ality), say `foo`, then a malicious actor cannot target everyone's app via the strategy of targeting some widely-used utility library that has a near-monopoly on `foo`. 
 
@@ -415,7 +420,7 @@ In the open-source realm specifically it could have implications for collaborati
 
 These effects are likely to also occur unknowingly as developers use LLM code completion tools and coding agents.
 As AI companies have been caught using copyrighted materials like books as training data (which researchers have shown can be [extracted verbatim](https://doi.org/10.48550/arXiv.2601.02671)), it does not seem realistic to assume that AI companies are respecting open-source licenses when using code as training data; they are simply gobbling up all of the code they can get their hands on.
-Thus, what once may have been possible to guard against via alternative licensing (e.g., [FSL](https://fsl.software/), [Polyform](https://polyformproject.org/licenses/), [Fair-code](https://faircode.io/), or [Commons Clause)(https://commonsclause.com/), no longer seems realistic.
+Thus, what once may have been possible to guard against via alternative licensing (e.g., [FSL](https://fsl.software/), [Polyform](https://polyformproject.org/licenses/), [Fair-code](https://faircode.io/), or [Commons Clause](https://commonsclause.com/), no longer seems realistic.
 It also does not seem realistic to assume that GitHub (aka Microsoft) is not using code in private repositories for training (especially if Copilot has ever seen the code in that repo).
 
 
@@ -431,6 +436,11 @@ The next-best approach then would be for the user to delegate __maintenance of t
 Should we therefore predict that we will see a lot more forking/vendoring in the future, and AI tools will step in to this space of keeping forks in sync with upstream projects?
 What impacts will this have on the open-source ecosystem?
 
+
+##### Will Claude Code and friends become so good that keeping something closed-source won't make sense at all anymore?
+
+Related to [second-order effects](#second-order-effects) above.
+If someone can now use AI to build a clone of your closed-source software in a week, what good is keeping it closed-source?
 
 
 
