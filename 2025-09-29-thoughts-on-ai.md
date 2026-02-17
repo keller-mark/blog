@@ -124,6 +124,22 @@ In addition to exam restrictions, I took several CS classes that had no-laptop p
 (If needed for health/accessibility reasons, disability accomodations could always still be made through a disability office on a case-by-case basis, just as they always have been.)
 Post-pandemic, these policies may be more challenging to implement, but with AI such policies seem more necessary than ever.
 
+#### "Integrating AI" into curricula: Do students really need a course to learn how to use a chat interface?
+
+There is a lot of [buzz](https://www.theguardian.com/us-news/2025/jun/09/ohio-university-ai-training) around how schools/colleges or individual teachers/professors/courses are integrating AI into educational materials.
+Similarly, for professionals like software engineers, there is a lot of talk about "getting left behind" by not adopting AI.
+
+
+While in the recent past, it may have been possible to argue that using AI was a "skill" to be learned, as getting models to do what you want has sometimes involved being an LLM whisperer, I have a hard time with this argument today.
+As models have improved rapidly, "prompt engineering" and "context engineering" have become almost obsolete.
+The fast uptake and hype around AI are intrinsically linked to the fact that, as a user interface, natural language is just that: natural.
+It does not require training to use a message app.
+
+
+As discussed in the previous section, we should keep K-12 (and even university) education as free from AI as possible, dedicating as much time as possible to learning foundational skills like critical thinking, that will benefit students in both the absence and presence of AI.
+If a student's future employer ends up wanting them to use AI in the workplace, let's be generous and say it may take a student who has lived under a rock one week to learn the required AI skill of writing prompts.
+So be it.
+
 
 ### Randomness is inherent to LLMs
 
