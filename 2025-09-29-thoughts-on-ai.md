@@ -108,15 +108,15 @@ I think it can be useful to consider the calculator-for-math analogy when we thi
 
 Think back to when you were a student learning multiplication. Were you allowed to use a calculator when learning your times tables?
 
-
+<!--
 Think back to when you have taken standardized tests.
 At least when I took the SAT, we were not allowed to use computers, and there were strict limits on what types of calculators could be used.
 When I took the GRE, it was on a computer at a testing center, without access to the internet or any applications beyond the testing software.
-Even if we view the AI as just another tool, it would be very appropriate to tightly restrict its usage in educational settings, especially in K-12 education.
-
+Even if we view the AI as just another tool, it would be best to tightly restrict its usage in educational settings, especially in K-12 education.
+-->
 
 Sure, eventually students are introduced to the TI-83, but this is not until the advanced math classes are reached.
-If we extend this thinking to AI/LLMs, we should not be introducing them prior to being confident that students can read, write, and do critical thinking on their own.
+If we extend this thinking to AI/LLMs, we should not be introducing them prior to being confident that students can read, write, and do critical thinking on their own, even if we view AI as just another tool.
 
 
 Even as a computer science major in college, I had many CS/programming/algorithms classes in which exams were entirely on paper, no computers or phones in sight (albeit I graduated in 2019, squeaking out pre-COVID).
@@ -124,6 +124,7 @@ In addition to exam restrictions, I took several CS classes that had no-laptop p
 (If needed for health/accessibility reasons, disability accomodations could always still be made through a disability office on a case-by-case basis, just as they always have been.)
 Post-pandemic, these policies may be more challenging to implement, but with AI such policies seem more necessary than ever.
 
+<!--
 #### "Integrating AI" into curricula: Do students really need a course to learn how to use a chat interface?
 
 There is a lot of [buzz](https://www.theguardian.com/us-news/2025/jun/09/ohio-university-ai-training) around how schools/colleges or individual teachers/professors/courses are integrating AI into educational materials.
@@ -139,7 +140,7 @@ It does not require training to use a message app.
 As discussed in the previous section, we should keep K-12 (and even university) education as free from AI as possible, dedicating as much time as possible to learning foundational skills like critical thinking, that will benefit students in both the absence and presence of AI.
 If a student's future employer ends up wanting them to use AI in the workplace, let's be generous and say it may take a student who has lived under a rock one week to learn the required AI skill of writing prompts.
 So be it.
-
+-->
 
 ### Randomness is inherent to LLMs
 
