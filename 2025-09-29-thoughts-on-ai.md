@@ -498,6 +498,40 @@ I hope that one positive outcome of code becoming cheaper to write is that we ca
 As team members, we can more readily try alternative approaches, and we can view our code through a more objective lens during review.
 
 
+#### AI intensifies certain things
+
+The title of this [recent article](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it) got me thinking.
+More than making things easier or faster for software developers, AI is intensifying certain dynamics that already existed.
+
+
+I am reminded of some of the points made in the classic blog post [How to Do Code Reviews Like a Human](https://mtlynch.io/human-code-reviews-1/).
+While some of the points become less important when working with an LLM, as they in fact reflect things that are uniquely human, others of the points become even more important (i.e., intensified) when working with coding agents (or reviewing potentially AI-generated code passed-off by other teammates):
+
+- Let computers do the boring parts
+- Be generous with code examples
+- Aim to bring the code up a letter grade or two
+- Look for opportunities to split up large reviews
+- Respect the scope of the review
+
+
+For the points that become _less_ important when communicating directly with an agent, it is perhaps more important than ever that we remind ourselves of them when communicating with our fellow teammates:
+
+- Settle style arguments with a style guide
+- Start reviewing immediately
+- Start high level and work your way down
+- Never say "you"
+- Frame feedback as requests, not commands
+- Tie notes to principles, not opinions
+- Limit feedback on repeated patterns
+- Offer sincere praise
+- Grant approval when remaining fixes are trivial
+- Handle stalemates proactively
+
+
+#### Vibe coding vs. Power coding
+
+TODO
+
 ## Do you like seeing AI in your vision of the future?
 
 I was recently asked, "How do you think your job will be changed by AI?" and subsequently, "Do you like that vision of the future?".
