@@ -11,6 +11,12 @@ _I am sure these thoughts will evolve over time (and I may update this post over
 _Caveat: I have a CS background, but do not claim to be an AI expert._
 
 
+## Table of contents
+
+- What your loved ones should know about AI and other thoughts on AI fluency
+- Thoughts on AI in software engineering
+- Thoughts on AI in science
+- Additional readings about AI
 
 
 ## What does it mean to be "fluent in AI"?
@@ -381,6 +387,37 @@ In a way, this makes sense though, as the LLM is only doing what we ask, and we 
 - The LLM may be able to help optimize or analyze the big-O notation of a block of code, but only if you asked it to do so. It probably will not recognize "hot" code paths on its own without more context/prompting. There is some [evidence](https://doi.org/10.48550/arXiv.2511.04427) for this.
 
 
+#### In software, the time is ripe to "pull an Apple"
+
+Apple is known for identifying good ideas pioneered by others (specifically, Android) and copying them with better execution.
+Being the second ones to the table gives them an advantage: they can skip much of the trial-and-error, leapfrogging any minor issues that arose in the first iteration.
+
+
+We are here now with software.
+All it takes is identifying some "good" software and using a coding agent to "do it better", starting from scratch.
+In some cases, pulling-an-Apple probably just looks like porting some software from your non-favorite to your favorite programming language.
+In other cases, it may look like [rewriting NextJs](https://blog.cloudflare.com/vinext/) so that it can use a different build tool.
+
+
+It is easy for the from-scratch rewrite to be better: you can use your favorite modern tech stack from the beginning, you can avoid all the historical baggage, and you can vary the implementation along whatever tradeoff axes you view as "better".
+Oddly, it may be easier to approach this process as an outsider, since you can introduce as many breaking changes as you want, without appearing to betray existing users or even provide them with an upgrade guide.
+
+
+As models improve, should developers periodically try to rewrite their software from scratch?
+A hesitancy to betray existing users may make developers reluctant to do so for their own software.
+But upgrade guides and code-mods should be cheaper to create now too.
+After all, during existing users' upgrades, will it even be a human downstream who experiences the paper cut?
+
+
+
+#### Code being cheap extends to deletion
+
+If you have ever had to convince a team member that it would be better to delete a large chunk of their pull request, then you know how easy it can be for developers to fall into the sunk cost fallacy.
+In the past, these situations have required treading delicately during code review, especially when the contributor is somehow emotionally attached to their contribution.
+I hope that one positive outcome of code becoming cheaper to write is that we can fall victim to this fallacy less often.
+As team members, we can more readily try alternative approaches, and we can view our code through a more objective lens during review.
+
+
 ## Do you like seeing AI in your vision of the future?
 
 I was recently asked, "How do you think your job will be changed by AI?" and subsequently, "Do you like that vision of the future?".
@@ -397,8 +434,6 @@ These were my responses to the latter question:
   - I have switched to using Gemini (Flash/Pro) via Copilot or the Harvard AI Sandbox, since they published their [environmental impact paper](https://arxiv.org/pdf/2508.15734). I like the transparency and I suspect that Google has much more experience at scaling infrastructure efficiently, compared to the newer startups such as OpenAI/Anthropic/etc which are also reported to be chaotic workplaces. (There are also many disadvantages to going with the Google/big-tech option. For instance, I do not want them to own yet more aspects of my data when they already have search history, email, photos, docs, slides, etc. and given their ad-driven business model.)
 - I don't like the intellectual property aspects (lack of proper credit, hallucination of references, risks to open-source ecosystem).
 - I don't like to constantly be questioning whether text or code that I am reading was AI-generated (on top of trying to understand the content). (Keep in mind that articles _about_ AI that argue _in favor_ of AI are especially likely to be at least partially AI-generated.)
-
-
 
 
 
