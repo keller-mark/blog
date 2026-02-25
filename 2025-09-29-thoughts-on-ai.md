@@ -409,7 +409,22 @@ While I would not rule out improvement over time, I would reiterate the point ma
 
 <!--However it is interesting to consider that LLMs are (at least currently) bad at creating abstractions that reflect the bigger picture.-->
 
+<!--
+The models are certainly improving for coding. I was able to successfully port something non-trivial from C++ to Rust that I had given up on in December 2025. But I think they still have major "blind spots", like logic that has to do with 2D coordinate systems (let alone 3D).
 
+Even just asking the model to use a certain package or function from an existing library can be painful - the LLM tries to go to the documentation website and navigate around, or it tries to find the source code in my local node_modules/crates, or tries to go to the GitHub website. It always takes forever and feels like a waste of tokens/compute so I will stop the model and just do it manually in these cases.
+
+### Vibe coding vs. Power coding
+
+Even when code written by the LLM seems functional, it often does not reflect my mental model or how I would have implemented it, making it difficult to fix any bugs identified later.
+I therefore sometimes end up doing a significant refactoring of what it produced, or reimplement the core logic in a different way that more closely matches my mental model. While at times this can feel micro-manage-y, I think it is emblematic of the difference between vibe coding and power coding. When power coding, we aim to use LLMs to augment our engineering skills, rather than replace them. We delegate the lowest-hanging fruit tasks to the LLM, and take back over for the code in the critical paths.
+
+Despite the discussion around software engineering job losses, it remains true that natural language-to-code translation remains ambiguous. On the one hand: these days, steering the model in a more favorable direction can take as little as adding a single-line comment or rephrasing a TODO statement to lessen ambiguity. On the other hand: it takes expertise to recognize that the model is going astray. The ability to read and understand a large amount of code quickly can only be earned through experience. As Rob Patro puts it, the danger is that this will create an "expertise cliff", widening the gap between experts and everyone else:
+
+>  ...these tools may further widen the divide between the most effective, capable and knowledgeable experts, and everyone else. It is the seasoned greybeard, who has spent months of cumulative time tracking down and squashing subtle heisenbugs, who can immediately see and correct the silly but obvious (to them) mistake that Claude just made. It is the accomplished algorithm engineer who knows exactly how a specific data structure needs to be laid out to maximize cache efficiency and therefore performance. It is that algorithm engineer, and the knowledge they bring to the tool, that lets them guide the model to the right solution, and not just a solution. Ultimately, I fear that if we are not able to effectively teach and instill that knowledge and experience in those who are now undergoing that critical stage of their development, we may be creating, in some ways, an expertise cliff. For those who have that expertise today, it has often come through hard-earned knowledge, manual construction of sophisticated systems from first principles, and a lot of persistence and banging their heads against the wall. There may be ways to create that level of expertise and knowledge without all of the associated “manual” exercise, but those ways are as yet, to me, unclear.
+
+The ambiguity goes beyond natural language. The limits of LLM context windows mean that the model is always operating in isolation. And in the absence of the final software product (or writing the full requirements in waterfall-style), the vision for a complex software project will have never been fully externalized. While we can try to get around this by introducing planning phases, the truth is that if some piece of code written today for feature A will need to be touched tomorrow when implementing feature B, the internals do matter. We can try to constrain regressions by having iron-clad test suite, but for only the most modular components of a system will it be the case that such tests will be set in stone, never needing to be modified.
+-->
 
 
 #### LLMs are bad at performance optimization
