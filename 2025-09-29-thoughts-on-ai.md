@@ -11,6 +11,12 @@ _I am sure these thoughts will evolve over time (and I may update this post over
 _Caveat: I have a CS background, but do not claim to be an AI expert._
 
 
+## Table of contents
+
+- What your loved ones should know about AI and other thoughts on AI fluency
+- Thoughts on AI in software engineering
+- Thoughts on AI in science
+- Additional readings about AI
 
 
 ## What does it mean to be "fluent in AI"?
@@ -456,6 +462,14 @@ Thus, what once may have been possible to guard against via alternative licensin
 It also does not seem realistic to assume that GitHub (aka Microsoft) is not using code in private repositories for training (especially if Copilot has ever seen the code in that repo).
 
 
+In response to these challenges, some open-source projects have begun to [close down their test suites](https://saewitz.com/tests-are-the-new-moat).
+It remains to be seen how effective this strategy will be, but large projects like [SQLite](https://sqlite.org/testing.html) have taken this approach (pre-AI).
+To succeed, it first requires that a project has tests, and subsequently that these tests are non-trivial to generate (e.g., using fuzzing or other techniques).
+In the case of SQLite, there are open-source [attempts](https://github.com/tursodatabase/turso/blob/main/docs/testing.md) to build a comprehensive test suite for the purpose of rewriting/porting.
+Thus, the "moat" analogy is apt: closing down tests can make rewrites more difficult and time-consuming endeavors, but, in the end, there is nothing stopping someone with enough motivation and time.
+
+
+
 ##### How does this all affect the open-source ecosystem?
 
 Understandably, there is currently a movement against reviewing pull requests that consist of AI-generated slop ([example](https://tylur.blog/harmful-prs/), [another example](https://graphite.art/volunteer/guide/starting-a-task/ai-contribution-policy/)).
@@ -476,6 +490,67 @@ If someone can now use AI to build a clone of your closed-source software in a w
 
 
 
+#### In software, the time is ripe to pull an Apple move
+
+Apple is known for identifying good ideas pioneered by others (specifically, Android) and copying them with better execution.
+Being the second ones to the table gives them an advantage: they can skip much of the trial-and-error, leapfrogging any minor issues that arose in the first iteration.
+
+
+We are here now with software.
+All it takes is identifying some "good" software and using a coding agent to "do it better", starting from scratch.
+In some cases, pulling-an-Apple probably just looks like porting some software from your non-favorite to your favorite programming language.
+In other cases, it may look like [rewriting NextJs](https://blog.cloudflare.com/vinext/) so that it can use a different build tool.
+
+
+It is easy for the from-scratch rewrite to be better: you can use your favorite modern tech stack from the beginning, you can avoid all the historical baggage, and you can vary the implementation along whatever tradeoff axes you view as "better".
+Oddly, it may be easier to approach this process as an outsider, since you can introduce as many breaking changes as you want, without appearing to betray existing users or even provide them with an upgrade guide.
+
+
+As models improve, should developers periodically try to rewrite their software from scratch?
+A hesitancy to betray existing users may make developers reluctant to do so for their own software.
+But upgrade guides and code-mods should be cheaper to create now too.
+After all, during existing users' upgrades, will it even be a human downstream who experiences the paper cut?
+
+#### Code being cheap extends to deletion
+
+If you have ever had to convince a team member that it would be better to delete a large chunk of their pull request, then you know how easy it can be for developers to fall into the sunk cost fallacy.
+In the past, these situations have required treading delicately during code review, especially when the contributor is somehow emotionally attached to their contribution.
+I hope that one positive outcome of code becoming cheaper to write is that we can fall victim to this fallacy less often.
+As team members, we can more readily try alternative approaches, and we can view our code through a more objective lens during review.
+
+
+#### AI intensifies certain things
+
+The title of this [recent article](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it) got me thinking.
+More than making things easier or faster for software developers, AI is intensifying certain dynamics that already existed.
+
+
+I am reminded of some of the points made in the classic blog post [How to Do Code Reviews Like a Human](https://mtlynch.io/human-code-reviews-1/).
+While some of the points become less important when working with an LLM, as they in fact reflect things that are uniquely human, others of the points become even more important (i.e., intensified) when working with coding agents (or reviewing potentially AI-generated code passed-off by other teammates):
+
+- Let computers do the boring parts
+- Be generous with code examples
+- Aim to bring the code up a letter grade or two
+- Look for opportunities to split up large reviews
+- Respect the scope of the review
+
+
+For the points that become _less_ important when communicating directly with an agent, it is perhaps more important than ever that we remind ourselves of them when communicating with our fellow teammates:
+
+- Settle style arguments with a style guide
+- Start reviewing immediately
+- Start high level and work your way down
+- Never say "you"
+- Frame feedback as requests, not commands
+- Tie notes to principles, not opinions
+- Limit feedback on repeated patterns
+- Offer sincere praise
+- Grant approval when remaining fixes are trivial
+- Handle stalemates proactively
+
+
+
+
 ## Do you like seeing AI in your vision of the future?
 
 I was recently asked, "How do you think your job will be changed by AI?" and subsequently, "Do you like that vision of the future?".
@@ -492,8 +567,6 @@ These were my responses to the latter question:
   - I have switched to using Gemini (Flash/Pro) via Copilot or the Harvard AI Sandbox, since they published their [environmental impact paper](https://arxiv.org/pdf/2508.15734). I like the transparency and I suspect that Google has much more experience at scaling infrastructure efficiently, compared to the newer startups such as OpenAI/Anthropic/etc which are also reported to be chaotic workplaces. (There are also many disadvantages to going with the Google/big-tech option. For instance, I do not want them to own yet more aspects of my data when they already have search history, email, photos, docs, slides, etc. and given their ad-driven business model.)
 - I don't like the intellectual property aspects (lack of proper credit, hallucination of references, risks to open-source ecosystem).
 - I don't like to constantly be questioning whether text or code that I am reading was AI-generated (on top of trying to understand the content). (Keep in mind that articles _about_ AI that argue _in favor_ of AI are especially likely to be at least partially AI-generated.)
-
-
 
 
 
@@ -527,6 +600,7 @@ On AI in education:
 - https://statmodeling.stat.columbia.edu/2025/07/18/i-am-no-longer-chairing-defenses-or-joining-committees-where-students-use-generative-ai-for-their-writing/
 - https://www.ted.com/talks/advait_sarkar_how_to_stop_ai_from_killing_your_critical_thinking
 - https://combine-lab.github.io/blog/2026/02/15/a-skeptics-guide-to-generative-ai-coding.html (the "Non-technical caveats" section, in particular)
+- https://sbgeoaiphd.github.io/rotating_the_space/posture
 
 On AI in software development:
 - https://www.phillipcarter.dev/posts/coding-with-llms
