@@ -114,15 +114,15 @@ I think it can be useful to consider the calculator-for-math analogy when we thi
 
 Think back to when you were a student learning multiplication. Were you allowed to use a calculator when learning your times tables?
 
-
+<!--
 Think back to when you have taken standardized tests.
 At least when I took the SAT, we were not allowed to use computers, and there were strict limits on what types of calculators could be used.
 When I took the GRE, it was on a computer at a testing center, without access to the internet or any applications beyond the testing software.
-Even if we view the AI as just another tool, it would be very appropriate to tightly restrict its usage in educational settings, especially in K-12 education.
-
+Even if we view the AI as just another tool, it would be best to tightly restrict its usage in educational settings, especially in K-12 education.
+-->
 
 Sure, eventually students are introduced to the TI-83, but this is not until the advanced math classes are reached.
-If we extend this thinking to AI/LLMs, we should not be introducing them prior to being confident that students can read, write, and do critical thinking on their own.
+If we extend this thinking to AI/LLMs, we should not be introducing them prior to being confident that students can read, write, and do critical thinking on their own, even if we view AI as just another tool.
 
 
 Even as a computer science major in college, I had many CS/programming/algorithms classes in which exams were entirely on paper, no computers or phones in sight (albeit I graduated in 2019, squeaking out pre-COVID).
@@ -130,6 +130,23 @@ In addition to exam restrictions, I took several CS classes that had no-laptop p
 (If needed for health/accessibility reasons, disability accomodations could always still be made through a disability office on a case-by-case basis, just as they always have been.)
 Post-pandemic, these policies may be more challenging to implement, but with AI such policies seem more necessary than ever.
 
+<!--
+#### "Integrating AI" into curricula: Do students really need a course to learn how to use a chat interface?
+
+There is a lot of [buzz](https://www.theguardian.com/us-news/2025/jun/09/ohio-university-ai-training) around how schools/colleges or individual teachers/professors/courses are integrating AI into educational materials.
+Similarly, for professionals like software engineers, there is a lot of talk about "getting left behind" by not adopting AI.
+
+
+While in the recent past, it may have been possible to argue that using AI was a "skill" to be learned, as getting models to do what you want has sometimes involved being an LLM whisperer, I have a hard time with this argument today.
+As models have improved rapidly, "prompt engineering" and "context engineering" have become almost obsolete.
+The fast uptake and hype around AI are intrinsically linked to the fact that, as a user interface, natural language is just that: natural.
+It does not require training to use a message app.
+
+
+As discussed in the previous section, we should keep K-12 (and even university) education as free from AI as possible, dedicating as much time as possible to learning foundational skills like critical thinking, that will benefit students in both the absence and presence of AI.
+If a student's future employer ends up wanting them to use AI in the workplace, let's be generous and say it may take a student who has lived under a rock one week to learn the required AI skill of writing prompts.
+So be it.
+-->
 
 ### Randomness is inherent to LLMs
 
@@ -351,40 +368,103 @@ In the meantime, I am not going to spend too much time getting excited or worrie
 MCP is an admission by AI companies/big-tech that LLMs are not the "everything machines" that they are constantly marketed as. They sometimes need adaptors. That is ok, but it is also something to think about.
 
 
+### LLMs lower the cost of software
 
-
-### LLMs lower the cost of code that previously required a library; LLMs increase developer confidence (too much?)
+<!--### LLMs lower the cost of code that previously required a library; LLMs increase developer confidence (too much?)-->
 
 As it has now become very low cost to generate code using LLMs, it lowers the barrier to asking the LLM to generate utility (or other low-level) functions that a developer would have historically reached for a library to achieve.
+This will increase the amount of spaghetti code, as developers become overconfident and ask for code that is too far outside of their level of expertise.
 
 
-This has advantages and disadvantages.
+<!--This has advantages and disadvantages.
 For instance, from a security perspective (on my mind given recent NPM package incidents), a widely-used and well-established library may be more likely to have already resolved glaring security issues.
 But at the same time, if every app has its own, slightly different implementation of some function(ality), say `foo`, then a malicious actor cannot target everyone's app via the strategy of targeting some widely-used utility library that has a near-monopoly on `foo`. 
+-->
+
+#### LLM software development agents lack taste
+
+As of early 2026, despite massive hype, AI agents for software development lack taste: they perform particularly poorly when given engineering tasks that involve delicately balancing tradeoffs.
+The following excerpts from a recent [JOSS blog post](https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future) elegantly summarize this:
+
+> ...With AI agents increasingly capable of producing entire codebases from natural language prompts, the marginal cost of code generation is rapidly approaching zero...
+>
+> ...As AI becomes capable of handling increasing fractions of the actual implementation work, the irreplaceable human contributions to software become clearer: understanding context, collaboration with others, making design tradeoffs, creating abstractions that capture domain expertise, and building conceptual foundations and following sustainable software practices that enable future discovery...
+>
+> ...Regardless of whether you leveraged AI assistance, show the human work: the problem framing, key design decisions and abstractions, and the practices that make the software usable and sustainable for others (tests, documentation, licensing, versioned releases, and a transparent issue and review process)...
+>
+> ...Show us the trade-offs you weighed, the architecture you settled on, and why it matters. The most valuable contributions often lie not in the code itself but in the conceptual framework it embodies. We particularly value work that thoughtfully builds upon or extends existing software ecosystems rather than reinventing solutions where quality alternatives already exist. We recommend this information live in your user-facing documentation to help would-be users understand what your software does, and how it does it...
+>
+> ...In an era of rapid code generation, the work of creating maintainable, well-documented, test-driven systems becomes even more valuable. We’ll look for evidence of good practices: comprehensive testing, clear documentation, statements describing support and governance, and clear pathways for community contribution...
 
 
-It will increase the amount of spaghetti/bad code, as developers become overconfident and ask for code that is too far outside of their level of expertise.
+A recent [blog post](https://cursor.com/blog/scaling-agents) from Cursor describes using LLMs to build a web browser "from scratch", pointing readers to the resulting [repository](https://github.com/wilsonzlin/fastrender), which is framed as a great achievement.
+(Nevermind the fact that this "from scratch" implementation has over 100 existing Rust crates as dependencies).
+Closer investigation of the files reveal a need to include instructions such as, "No shortcuts: The hard budgets (5s timeout, memory caps) are NOT permission to ship hacks, workarounds, TODOs, partial implementations, or 'close enough' behavior," ([source](https://github.com/wilsonzlin/fastrender/blob/5c2446a9d9f773697f96f98b4a6a1f948ba5472b/docs/philosophy.md?plain=1#L65)).
+The fact that humans need to yell such obvious instructions at these models shows how far off they still are from helping with truly challenging software engineering tasks.
 
 
-#### How does this all affect open-source software licensing?
-
-If a fellow developer does not like the terms of an open-source license that applies to some code repository, what stops them from simply asking an LLM to vary the variable names and other code patterns to generate code that retains the same functionality but is now syntactically different enough in the eyes of the legal system to pass as an entirely separate codebase that now lacks any direct ties to the original repository.
-This feels similar to other intellectual property concerns that have been raised by newspapers, book authors, and artists.
-In the open-source realm specifically it could have implications for collaboration and sustainability of open-source projects which were [already facing a crisis](https://openpath.quest/2024/the-open-source-sustainability-crisis/).
+At the same time, there is a sentiment that coding agents are generally bad at reusing code, or averse to adding dependencies (even for major features / low-level things for which there are existing libraries), with speculation that this behavior is intentionally baked into the model during post-training to avoid it trying to use outdated APIs.
 
 
-#### LLMs are bad at abstraction
+In a way, it makes sense that LLMs would be bad at abstraction, as we are generally asking the model to solve a specific problem in a specific codebase.
+It is up to the human developer to recognize the value of an abstraction that will solve the problem in-general, across many codebases, and then ask the model to create a reusable package.
+In my experience, when given even the most well-scoped of tasks (e.g., porting a library from one programming language to another), these models can still fail to stay on track, follow instructions, and balance explicitly specified tradeoffs.
+While I would not rule out improvement over time, I would reiterate the point made by the JOSS blog post above about the humanness of key aspects: "understanding context, collaboration with others, making design tradeoffs, creating abstractions that capture domain expertise, and building conceptual foundations."
 
-However it is interesting to consider that LLMs are (at least currently) bad at creating abstractions that reflect the bigger picture.
 
-- It is still on the developer to recognize the value of an abstraction, such as when to go to the extra effort to create a reusable package for some code, and how to structure the end-user APIs.
-In a way, this makes sense though, as the LLM is only doing what we ask, and we are generally asking for features that solve a specific problem in a specific codebase (we are not asking to solve a problem in-general, across many code-bases).
+
+<!--However it is interesting to consider that LLMs are (at least currently) bad at creating abstractions that reflect the bigger picture.-->
+
+
 
 
 #### LLMs are bad at performance optimization
 
 - LLMs are good at producing language that follows patterns, such as code. It really knows very little about the context of the code to be able to optimize it, such as which variables may store very large arrays, or which functions will take a long time to compute. Their training is optimized to produce the next tokens that are probable; there is nothing in the training process that would optimize for next-tokens that have good performance (besides maybe basic patterns or lack thereof in the training data, such as lack of many nested for loops).
 - The LLM may be able to help optimize or analyze the big-O notation of a block of code, but only if you asked it to do so. It probably will not recognize "hot" code paths on its own without more context/prompting. There is some [evidence](https://doi.org/10.48550/arXiv.2511.04427) for this.
+
+#### Second-order effects
+
+- Reduced demand for closed-source software and SaaS products?: As AI reduces the cost and expertise required to create software, a second-order effect will be the reduced demand for commercial software (e.g., software-as-a-service) products, with some [notable exceptions](https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/) for certain categories:
+  - core infrastructure like payment processing; industries involving lots of regulation / compliance
+  - very high-volume systems and data lakes
+  - software with significant network effects, especially where you collaborate with people outside your organization (e.g., Slack)
+  - products with rich integration ecosystems/plugin marketplaces
+  - companies with proprietary datasets
+- Security effects?: From a security perspective, a widely-used and well-established library may be more likely to have already resolved glaring security issues.
+But at the same time, if every app has its own, slightly different implementation of some function(ality), say `foo`, then a malicious actor cannot target everyone's app via the strategy of targeting some widely-used utility library that has a near-monopoly on `foo`. 
+
+##### How does this all affect open-source software licensing?
+
+If a fellow developer does not like the terms of an open-source license that applies to some code repository, what stops them from simply asking an LLM to vary the variable names and other code patterns to generate code that retains the same functionality but is now syntactically different enough in the eyes of the legal system to pass as an entirely separate codebase that now lacks any direct ties to the original repository.
+This feels similar to other intellectual property concerns that have been raised by newspapers, book authors, and artists.
+In the open-source realm specifically it could have implications for collaboration and sustainability of open-source projects which were [already facing a crisis](https://openpath.quest/2024/the-open-source-sustainability-crisis/).
+
+
+These effects are likely to also occur unknowingly as developers use LLM code completion tools and coding agents.
+As AI companies have been caught using copyrighted materials like books as training data (which researchers have shown can be [extracted verbatim](https://doi.org/10.48550/arXiv.2601.02671)), it does not seem realistic to assume that AI companies are respecting open-source licenses when using code as training data; they are simply gobbling up all of the code they can get their hands on.
+Thus, what once may have been possible to guard against via alternative licensing (e.g., [FSL](https://fsl.software/), [Polyform](https://polyformproject.org/licenses/), [Fair-code](https://faircode.io/), or [Commons Clause](https://commonsclause.com/), no longer seems realistic.
+It also does not seem realistic to assume that GitHub (aka Microsoft) is not using code in private repositories for training (especially if Copilot has ever seen the code in that repo).
+
+
+##### How does this all affect the open-source ecosystem?
+
+Understandably, there is currently a movement against reviewing pull requests that consist of AI-generated slop ([example](https://tylur.blog/harmful-prs/), [another example](https://graphite.art/volunteer/guide/starting-a-task/ai-contribution-policy/)).
+It may then be useful to consider how AI will impact the open-source ecosystem long-term, in light of the increasingly cheap cost to generate code that fulfills a particular feature request.
+From the perspective of a typical user of some library `lib`, if `lib` helps the user achieve 90% of their goals but is missing some feature `f1` that they need, they now have two main (constructive) options: build the feature and contribute back upstream OR build the feature and maintain a fork.
+If using LLMs now lowers the barrier to building the feature, then what is the incentive to contribute back upstream if there is a high chance this will involve friction (even just the normal friction of a pre-AI PR interaction may now be seen as too much effort)?
+The typical AI-using user may now seek to use AI to reduce this friction.
+The naive approach would be to delegate the interactions with the upstream project to their AI agent, but this will hit roadblocks if the upstream maintainers have a policy against AI-generated contributions.
+The next-best approach then would be for the user to delegate __maintenance of their fork__ to their AI agent.
+Should we therefore predict that we will see a lot more forking/vendoring in the future, and AI tools will step in to this space of keeping forks in sync with upstream projects?
+What impacts will this have on the open-source ecosystem?
+
+
+##### Will Claude Code and friends become so good that keeping something closed-source won't make sense at all anymore?
+
+Related to [second-order effects](#second-order-effects) above.
+If someone can now use AI to build a clone of your closed-source software in a week, what good is keeping it closed-source?
+
 
 
 #### In software, the time is ripe to "pull an Apple"
@@ -455,6 +535,10 @@ If so, take it with a grain of salt.
 - https://www.shloked.com/writing/claude-memory
 - https://www.youtube.com/watch?v=Vz0oQ0v0W10
 - https://www.technologyreview.com/2025/10/30/1127057/agi-conspiracy-theory-artifcial-general-intelligence/
+- https://substack.com/inbox/post/183687217
+- https://www.science.org/content/article/ai-has-supercharged-scientists-may-have-shrunk-science
+- https://www.youtube.com/watch?v=SmHgtyym6OA&t=1521s (from 25:21 to around 30:48)
+- https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it
 <!-- - https://arxiv.org/abs/2508.15734 -->
 <!-- - https://doi.org/10.1145/3442188.3445922 -->
 
@@ -462,9 +546,12 @@ On AI in education:
 - https://www.economist.com/podcasts/2025/09/20/we-dont-need-no-ai-education
 - https://statmodeling.stat.columbia.edu/2025/07/18/i-am-no-longer-chairing-defenses-or-joining-committees-where-students-use-generative-ai-for-their-writing/
 - https://www.ted.com/talks/advait_sarkar_how_to_stop_ai_from_killing_your_critical_thinking
+- https://combine-lab.github.io/blog/2026/02/15/a-skeptics-guide-to-generative-ai-coding.html (the "Non-technical caveats" section, in particular)
 
 On AI in software development:
 - https://www.phillipcarter.dev/posts/coding-with-llms
 - https://blog.genesmindsmachines.com/p/llms-excel-at-programminghow-can
+- https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future
+
 
 
