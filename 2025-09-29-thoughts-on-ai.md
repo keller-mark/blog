@@ -381,9 +381,7 @@ They enable injection of relevant information into the intermediate part of the 
 Rather than being the model's "thoughts", the injected contents come from manually-written Markdown files provided by the user.
 
 
-### LLMs lower the cost of software
-
-### Alternative section title: The era of slopbowls and slopforks
+### LLMs lower the cost of software: The era of slopbowls and slopforks
 
 <!--### LLMs lower the cost of code that previously required a library; LLMs increase developer confidence (too much?)-->
 
