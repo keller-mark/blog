@@ -383,6 +383,8 @@ Rather than being the model's "thoughts", the injected contents come from manual
 
 ### LLMs lower the cost of software
 
+### Alternative section title: The era of slopbowls and slopforks
+
 <!--### LLMs lower the cost of code that previously required a library; LLMs increase developer confidence (too much?)-->
 
 As it has now become very low cost to generate code using LLMs, it lowers the barrier to asking the LLM to generate utility (or other low-level) functions that a developer would have historically reached for a library to achieve.
