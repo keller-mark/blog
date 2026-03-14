@@ -368,6 +368,18 @@ In the meantime, I am not going to spend too much time getting excited or worrie
 
 MCP is an admission by AI companies/big-tech that LLMs are not the "everything machines" that they are constantly marketed as. They sometimes need adaptors. That is ok, but it is also something to think about.
 
+### Chain-of-Thought and Skills as intentional prompt injection
+
+Despite the introduction of buzzwords, next-token prediction remains the core of LLMs.
+Innovations like Chain-of-Thought are helpful because they do the "context engineering" for us.
+Rather than jumping directly from prompt to final-answer, Chain-of-Thought "injects" an intermediate step in which the model is steered (or steers itself, I am fuzzy on the implementation details) to fill up its context with a bunch of background information related to the important concepts that appeared in the prompt.
+In doing so, the final-answer is improved, simply because the LLM context has been better "primed" with relevant tokens.
+
+
+[Skills](https://claude.com/blog/skills) work in a similar fashion.
+They enable injection of relevant information into the intermediate part of the context window, between prompt and final-answer.
+Rather than being the model's "thoughts", the injected contents come from manually-written Markdown files provided by the user.
+
 
 ### LLMs lower the cost of software
 
