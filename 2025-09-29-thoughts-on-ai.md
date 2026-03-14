@@ -93,6 +93,7 @@ Historically, AI was a very broad term that encompassed not only machine learnin
 
 The "goal" of an LLM is to predict the next "token" (think word or phrase) in a sentence.
 Some researchers have (controversially) referred to LLMs as ["Stochastic Parrots"](https://en.wikipedia.org/wiki/Stochastic_parrot) to try to highlight their limitations.
+This controversy has been [discussed](https://medium.com/@margarmitchell/no-ai-is-not-a-stochastic-parrot-a99e57766bed) by the original authors.
 
 ### Before asking an LLM, ask yourself: Does this question makes sense as a "language problem"?
 
@@ -233,7 +234,7 @@ For example, for a Vite (web development) project, it is best to use the `create
 
 ### All training data is biased, the question is towards/against what (and to what extent)
 
-
+The biases in training data can have both short-term and long-term [implications](https://doi.org/10.1016/j.tics.2026.01.003).
 
 ### Be wary of prompt injection
 
@@ -592,6 +593,7 @@ If so, take it with a grain of salt.
 - https://www.science.org/content/article/ai-has-supercharged-scientists-may-have-shrunk-science
 - https://www.youtube.com/watch?v=SmHgtyym6OA&t=1521s (from 25:21 to around 30:48)
 - https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it
+- https://hbr.org/2026/03/when-using-ai-leads-to-brain-fry
 <!-- - https://arxiv.org/abs/2508.15734 -->
 <!-- - https://doi.org/10.1145/3442188.3445922 -->
 
@@ -606,6 +608,9 @@ On AI in software development:
 - https://www.phillipcarter.dev/posts/coding-with-llms
 - https://blog.genesmindsmachines.com/p/llms-excel-at-programminghow-can
 - https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future
+- https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html?unlocked_article_code=1.S1A.zcAC.15xqbTdRHndt&smid=url-share
+- https://matsen.group/general/2026/02/10/spec-kit-walkthrough.html
+- https://aris.pub/blog/software-value-in-the-ai-age/
 
 
 
